@@ -1,0 +1,23 @@
+export enum ButtonVariant {
+  Primary,
+  Light,
+  OutLine,
+  Ronchi,
+  Indigo,
+  AquaForest,
+  GreenSmoke,
+  NewYorkPink,
+  White,
+  Black,
+  WhiteRonchi,
+  WhiteIndigo,
+  WhiteAquaForest,
+  WhiteGreenSmoke,
+  WhitePortage,
+  WhiteNewYorkPink,
+  WhiteWisteria,
+  Transparent,
+  WhiteDolphin,
+  WhiteLilac,
+  BlueGem
+}

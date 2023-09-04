@@ -1,0 +1,28 @@
+@import '../../components/theme/index.scss';
+
+.container {
+  width:fit-content;
+  white-space: nowrap;
+  height: 48px;
+  padding: 15px 25px 15px 25px;
+  gap: 10px;
+  background: linear-gradient(rgba(206, 201, 232, 0.4), rgba(206, 201, 232, 0.1));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  -moz-backdrop-filter: blur(10px);
+  -o-backdrop-filter: blur(10px);
+  -ms-backdrop-filter: blur(10px);
+  border-radius: 40px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    color: $mulledWine;
+    text-transform: uppercase;
+  }
+}

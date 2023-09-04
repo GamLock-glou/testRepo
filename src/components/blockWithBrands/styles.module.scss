@@ -1,0 +1,227 @@
+@import "../theme/index";
+
+.container{
+  display: none;
+
+  @include respond-to(tablet) {
+    display: flex;
+    width: 970px;
+    height: 555px;
+  }
+
+  @include respond-to(desktop) {
+    width: 1326px;
+    height: 675px;
+  }
+
+  @include respond-to(largeDesktop) {
+    width: 1629px;
+    height: 875px;
+    justify-content: space-between;
+  }
+
+  .sidebar {
+    .textBlock {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      width: 100%;
+      border-bottom: 1px solid $mineShaft25;
+    }
+  
+    .title {
+      @extend .textBlock;
+      color: $mineShaft50;
+      padding-bottom: 18px;
+      margin-bottom: 14px;
+      display: none;
+      @include respond-to(desktop) {
+        display: block;
+      }
+    }
+  
+    .description {
+      @extend .textBlock;
+      display: none;
+  
+      @include respond-to(desktop) {
+        display: block;
+        padding-bottom: 18px;
+        margin-bottom: 14px;
+      }
+    }
+
+    .descriptionTablet {
+      display: block;
+      margin-bottom: 22px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      width: 100%;
+      border-bottom: 1px solid $mineShaft25;
+
+      @include respond-to(desktop) {
+        display: none;
+      }
+
+      .titleTablet {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: $mineShaft50;
+        padding-bottom: 14px;
+      }
+
+      .titleTabletActive {
+        color: $mineShaft;
+      }
+
+      .textTablet {
+        display: block;
+        overflow: hidden;
+        animation: open 0.5s ease-in-out;
+        animation-fill-mode: forwards;
+        padding-top: 14px;
+        padding-bottom: 16px;
+        color: $mineShaft50;
+
+        @keyframes open {
+          0% { height: 0px }
+          1% {
+            border-top: 1px solid $mineShaft25;
+            height: 1px;
+          }
+          100% {
+            border-top: 1px solid $mineShaft25;
+            height: 100px;
+          }
+        }
+      }
+
+      .hide {
+        display: none;
+        padding-top: 14px;
+        padding-bottom: 16px;
+        border-top: 1px solid $mineShaft25;
+        animation: close 0.4s ease-in-out;
+        animation-fill-mode: forwards;
+        overflow: hidden;
+        color: $mineShaft50;
+
+        @keyframes close {
+          0% {
+            height: 100px;
+            display: block;
+          }
+          99% {
+            height: 0px;
+            padding: 0px;
+            display: block;
+          }
+          100% {
+            height: 0px;
+            padding: 0px;
+            display: none;
+          }
+        }
+      }
+    }
+
+    .openButton {
+      width: 22px;
+      height: 22px;
+      border: none;
+      border-radius: 11px;
+      padding: 0px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: $athensGray;
+    }
+
+    .openButtonActive {
+      background: $portage;
+    }
+  
+    .productsBlock {
+      width: 238px;
+  
+      @include respond-to(desktop) {
+        margin-left: 14px;
+        width: 401px;
+      }
+    }
+  }
+
+  .allProducts {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    @include respond-to(tablet) {
+      width: 719px;
+      height: 555px;
+      margin-left: 12px;
+    }
+
+    @include respond-to(desktop) {
+      width: 875px;
+      height: 675px;
+      margin-left: 21px;
+    }
+
+    @include respond-to(largeDesktop) {
+      width: 1140px;
+      height: 875px;
+      margin-left: 59px;
+    }
+
+    .buttonOpenLine {
+      position: absolute;
+      bottom: 25px;
+      display: block;
+      padding: 7px 16px;
+      min-height: 16px;
+      font-size: 13px;
+      line-height: 16px;
+      border-radius: 25px;
+      width: 144px;
+      @include respond-to(desktop) {
+        display: none;
+      }
+    }
+  }
+}
+
+.containerMobile {
+  height: 704px;
+  width: 376px;
+  padding-top: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  @include respond-to(tablet) {
+    display: none;
+  }
+
+  .allProducts {
+    width: 365px;
+    height: 264px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    .buttonOpenLine {
+      position: absolute;
+      bottom: 15px;
+      width: fit-content;
+      min-height: 16px;
+      padding: 7px 16px;
+      text-align: center;
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 15px;
+    }
+  }
+}

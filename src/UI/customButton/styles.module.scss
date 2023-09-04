@@ -1,0 +1,238 @@
+@import '../../components/theme/index.scss';
+
+.container {
+  width: 40px;
+  height: 40px;
+  border-radius: 30px;
+  border: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover:not(:disabled) {
+    transition: background-color 0.3s;
+  }
+
+  &.evasBtnPrimary {
+    background-color: $portage;
+    border: 1px solid $portage;
+
+    >svg>path {
+      fill: $white;
+    }
+    
+    &:hover {
+      background-color: $chetwodeBlue;
+    }
+  }
+
+  &.evasBtnOutLine {
+    background-color: $white;
+    opacity: 0.4;
+    >svg>path {
+      fill: $balticSea;
+    }
+  }
+
+  &.evasBtnWhitePortage {
+    background-color: $white;
+    >svg>path {
+      fill: $portage;
+    }
+  }
+
+  &.evasBtnWhiteAquaForest {
+    background-color: $white;
+    >svg>path {
+      fill: $aquaForest;
+    }
+    &:hover {
+      background-color: $aquaForest;
+      >svg>path {
+        fill: $white;
+      }
+    }
+  }
+
+  &.evasBtnAquaForest {
+    background-color: $aquaForest;
+    >svg>path {
+      fill: $white;
+    }
+
+    &:hover {
+      background-color: $killarney;
+    }
+  }
+
+  &.evasBtnWhiteGreenSmoke {
+    background-color: $white;
+    >svg>path {
+      fill: $greenSmoke;
+    }
+
+    &:hover {
+      background-color: $greenSmoke;
+      >svg>path {
+        fill: $white;
+      }
+    }
+  }
+  
+  &.evasBtnGreenSmoke {
+    background-color: $greenSmoke;
+    >svg>path {
+      fill: $white;
+    }
+
+    &:hover {
+      background-color: $asparagus;
+    }
+  }
+
+  &.evasBtnWhiteIndigo {
+    background-color: $white;
+    >svg>path {
+      fill: $indigo;
+    }
+    &:hover {
+      background-color: $indigo;
+      >svg>path {
+        fill: $white;
+      }
+    }
+  }
+
+  &.evasBtnIndigo {
+    background-color: $portage2;
+    >svg>path {
+      fill: $white;
+    }
+
+    &:hover {
+      background-color: $indigo;
+    }
+  }
+
+  &.evasBtnWhiteNewYorkPink {
+    background-color: $white;
+    >svg>path {
+      fill: $newYorkPink;
+    }
+
+    &:hover {
+      background-color: $newYorkPink;
+      >svg>path {
+        fill: $white;
+      }
+    }
+  }
+
+  &.evasBtnNewYorkPink {
+    background-color: $newYorkPink;
+    >svg>path {
+      fill: $white;
+    }
+
+    &:hover {
+      background-color: $matrix;
+    }
+  }
+
+  &.evasBtnWhiteRonchi {
+    background-color: $white;
+    >svg>path {
+      fill: $ronchi;
+    }
+    &:hover {
+      background-color: $ronchi;
+      >svg>path {
+        fill: $white;
+      }
+    }
+  }
+
+  &.evasBtnRonchi {
+    background-color: $ronchi;
+    >svg>path {
+      fill: $white;
+    }
+    &:hover {
+      background-color: $roti;
+    }
+  }
+
+  &.evasBtnWhiteWisteria {
+    background-color: $white;
+    border: 1px solid $wisteria;
+    color: $wisteria;
+    >svg>path {
+      fill: $wisteria;
+    }
+    &:hover {
+    color: $white;
+    background-color: $wisteria;
+      >svg>path {
+        fill: $white;
+      }
+    }
+  }
+
+  &.evasBtnLight {
+    background: rgba(0,0,0, 0);
+    border: 1px solid $alto;
+
+    &:hover:not(:disabled) {
+      transition: background 0.3s;
+      background: $black04;
+    }
+
+    &:disabled {
+      >svg>path {
+        fill: $alto;
+      }
+    }
+  }
+
+  &.evasBtnWhiteDolphin {
+    background: $white;
+    border: 1px solid $white;
+
+    >svg>path {
+      width: 100%;
+      stroke: $dolphin;
+    }
+
+    &:hover:not(:disabled) {
+      transition: background 0.3s;
+      background: $dolphin;
+      border: 1px solid $dolphin;
+
+      >svg>path {
+        width: 100%;
+        stroke: $white;
+      }
+    }
+  }
+
+  &.evasBtnWhiteLilac {
+    border: 1px solid $whisper;
+    background: transparent;
+    &:hover:not(:disabled) {
+      border: 1px solid $purpleHeart;
+    }
+  }
+
+  &.evasBtnBlueGem {
+    border: 1px solid $blueGem;
+    background: transparent;
+    color: $blueGem;
+    &:hover:not(:disabled) {
+      background: $blueGem;
+      color: $white;
+    }
+    &:disabled {
+      opacity: 0.3;
+    }
+  }
+}

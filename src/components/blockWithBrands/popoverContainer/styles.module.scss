@@ -1,0 +1,63 @@
+@import "../../theme/index";
+
+.container {
+  width: 230px;
+  padding: 20px 20px 14px 20px;
+  @include respond-to(desktop) {
+    width: 220px;
+    padding: 30px;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+    @include respond-to(desktop) {
+      margin-bottom: 0px;
+    }
+  }
+
+  .text {
+    color: $balticSea;
+    font-weight: 400;
+    @include respond-to(desktop) {
+      margin-bottom: 9px;
+    }
+  }
+
+  .title {
+    @extend .text;
+    width: 195px;
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .description {
+    @extend .text;
+    width: 219px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .buttonTablet {
+    display: flex;
+    @include respond-to(desktop) {
+      display: none;
+    }
+  }
+
+  .button {
+    display: none;
+    @include respond-to(desktop) {
+      display: flex;
+      width: 160px;
+    }
+  }
+
+  .evasBtnArrow {
+    width: 20px;
+    margin-top: 4px;
+    margin-left: 12px;
+  }
+}

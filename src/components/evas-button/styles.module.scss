@@ -1,0 +1,126 @@
+@import "../theme/index";
+
+.evasBtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 50px;
+  font-size: 14px;
+  line-height: 17px;
+  width: 100%;
+  padding: 0px 30px;
+
+  border: none;
+  border-radius: 30px;
+  transition: color 0.3s;
+  cursor: pointer;
+
+  &:hover:not(:disabled) {
+    transition: color 0.3s;
+    color: $white;
+  }
+
+  &:disabled {
+    cursor: default;
+  }
+
+  // Primary variant styles
+  &.evasBtnPrimary {
+    background-color: $portage;
+    font-weight: 600;
+    color: $white;
+
+    &:hover {
+      background-color: $chetwodeBlue;
+    }
+  }
+
+  &.evasBtnNewYorkPink {
+    background-color: $newYorkPink;
+    font-weight: 600;
+    color: $white;
+
+    &:hover {
+      background-color: $matrix;
+    }
+  }
+
+  &.evasBtnIndigo {
+    background-color: $portage2;
+    font-weight: 600;
+    color: $white;
+
+    &:hover {
+      background-color: $indigo;
+    }
+  }
+
+  
+  &.evasBtnWhite {
+    background-color: $white;
+    color: $balticSea;
+    font-weight: 600;
+    padding: 0px 25px 0px 25px;
+    &:hover:not(:disabled) {
+      transition: color 0.3s;
+      color: $balticSea;
+    }
+  }
+
+  &.evasBtnAquaForest {
+    background-color: $aquaForest;
+    font-weight: 600;
+    color: $white;
+
+    &:hover {
+      background-color: $killarney;
+    }
+  }
+
+  &.evasBtnGreenSmoke {
+    background-color: $greenSmoke;
+    font-weight: 600;
+    color: $white;
+
+    &:hover {
+      background-color: $asparagus;
+    }
+  }
+
+  &.evasBtnRonchi {
+    background-color: $ronchi;
+    font-weight: 600;
+    color: $white;
+    &:hover {
+      background-color: $roti;
+    }
+  }
+
+  &.evasBtnGrey {
+    background-color: $black04;
+    font-weight: 500;
+    color: $mineShaft;
+  }
+
+  &.evasBtnBlack {
+    background-color: $black30;
+    font-weight: 500;
+    color: $white;
+
+    &:hover {
+      background-color: rgba(4, 4, 4, 0.5);
+    }
+  }
+
+  &.evasBtnTransparent {
+    background-color: $white30;
+    font-weight: 400;
+    color: $balticSea;
+
+    &:hover {
+      background-color: $white50;
+      color: $balticSea;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+@import '../../components/theme/index.scss';
+
+.container {
+  width: 100%;
+  background-color: $whiteLilac;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .header {
+    background: $white;
+    height: 70px;
+
+    @include respond-to(tablet){
+      height: 100px;
+    }
+  }
+
+  .line {
+    max-width: 1400px;
+    width: 100%;
+    border: 1px solid $snuff;
+  }
+}

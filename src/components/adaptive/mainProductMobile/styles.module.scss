@@ -1,0 +1,44 @@
+@import '../../theme/index.scss';
+
+.preloader {
+  height: 100vh;
+  padding-top: 70px;
+  @include respond-to(tablet) {
+    display: none;
+  }
+}
+
+.container {
+  @include respond-to(mobile) {
+    display: block;
+    background: url('../../../assets/images/mainBackgroundMobile.png') center center no-repeat;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    height: 100vh;
+    padding-top: 70px;
+    animation: show 0.5s ease-in-out;
+    box-sizing: border-box;
+  }
+
+  @include respond-to(tablet) {
+    display: none;
+  }
+}
+
+.wrapperBtn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 17px;
+}
+
+.btn {
+  width: fit-content;
+  height: 50px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin: 31px auto;
+}

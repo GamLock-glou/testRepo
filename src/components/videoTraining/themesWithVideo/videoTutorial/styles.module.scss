@@ -1,0 +1,68 @@
+@import '../../../theme/index.scss';
+
+.container {
+  grid-row-start: 1;
+  grid-row-end: 1;
+  position: relative;
+  background-color: $dustyGray;
+  border-radius: 40px;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include respond-to(desktop) {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    width: 850px;
+    height: 480px;
+  }
+
+  .video {
+    border-radius: 40px;
+    width: 100%;
+
+    @include respond-to(desktop) {
+      width: auto;
+      height: 100%;
+    }
+  }
+
+  .btn {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50%;
+    background: linear-gradient(rgba(206, 201, 232, 0.4), rgba(206, 201, 232, 0.1));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    -moz-backdrop-filter: blur(10px);
+    -o-backdrop-filter: blur(10px);
+    -ms-backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 65px;
+    height: 65px;
+    > svg {
+      width: 26px;
+      height: 26px;
+
+      > g {
+        fill: $white;
+      }
+    }
+
+    @include respond-to(tablet) {
+      width: 160px;
+      height: 160px;
+      > svg {
+        width: 64px;
+        height: 64px;
+      }
+    }
+  }
+}
